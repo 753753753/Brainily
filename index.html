@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+    <link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+
+<body style="background-color: #ffebeb;">
+
+<!-- nav bar start-->
+<header>
+    <section>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top py-0 pe-5">
+    <!-- <div class="container-fluid"> -->
+    <a class="navbar-brand ps-5 me-0" href="#">
+      <h1 class="text-white m-0"><img src="logo1.png" alt="" style="width: 7rem; height: 7rem;"></h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-end" id="navbarNavDropdown">
+      <ul class="navbar-nav fs-5 mx-4 me-auto my-2 my-lg-0 navbar-nav-scroll py-3">
+        <li style="width: 30rem;">
+            <div class="d-flex form-inputs text-center">
+                <input class="form-control rounded-pill" type="text" placeholder="Search any question...">
+                <i class="bx bx-search"></i>
+                </div>
+        </li>
+        <li class="nav-item mx-2 my-2" data-aos="fade-up-right">
+          <a class="nav-link active" aria-current="page" href="index.html" style="margin-left: 203px;">Ask Question</a>
+        </li>
+        <li class="nav-item mx-2  my-2" data-aos="fade-up-right">
+          <a class="nav-link" href="about.html"  data-bs-target="#signupModal" data-bs-toggle="modal">Login</a>
+        </li>
+      </ul>
+      <form class="d-flex  my-2" role="">
+        <button type="button" class="btn btn-primary mx-4 px-6 fs-5 fw-light shadow rounded-pill" data-bs-toggle="modal"
+          data-bs-target="#loginModal" data-aos="flip-up">Join For Free</button>
+      </form>
+    </div>
+  </nav>
+  <nav class="navbar1 navbar navbar-expand-lg navbar-light">
+    <div class="container" style="margin-top: -1rem;">
+      <a class="navbar-brand d-md-none d-md-flex" href="#">Categories</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" data-aos="fade-right">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">For Parent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">For Teacher</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Honor Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Textbook Solution</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<hr>
+</header>
+  <!-- nav bar end-->
+   
+ <!-- sign up-->
+   <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+   aria-labelledby="signupModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="staticBackdropLabel">Get an Brainily Account</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <form>
+           <div class="mb-3">
+             <label for="exampleInputEmail1" class="form-label">Email address</label>
+             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+           </div>
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword1">
+           </div>
+           <div class="mb-3">
+             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+             <input type="password" class="form-control" id="cexampleInputPassword1">
+           </div>
+           <button type="submit" class="btn btn-primary">Create Account</button>
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- sign up -->
+
+<!-- login up -->
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="loginModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="staticBackdropLabel">Get an Brainily Account</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Enter your Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Enter Your Email id
+          </label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="cexampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="cexampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Create Account</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- login up -->
+
+<!-- submit up -->
+<div class="modal fade" id="submitModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="submitModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header ">
+      <h1 class="modal-title fs-5 justify-content-center align-items-center px-6" id="staticBackdropLabel">Submit Your Answer Here</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <img src="img.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- submit up -->
+
+ <!-- main section start -->
+  <section class="main">
+    <div class="container">
+        <div class="card shadow" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="icon p-5">
+            <div class="d-flex align-items-center">
+                <div class="bg-dark rounded-circle btn-lg-square">
+                  <i class="fa fa-user text-white" aria-hidden="true"></i>
+                </div>
+                <div class="ms-3">
+                  <p class="mb-1">advika0079</p>
+                  <div class="p">
+                  <p class="mb-0">7 hours ago . Math . Primary School</p>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div class="text">
+            <h3 class="px-5">Compare 3.5 and 8/3 please</h3>
+        </div>
+        <div class="btnn px-5 py-4 d-flex">
+            <a href="product.html" class="btn main-btn  fs-6" data-bs-toggle="modal"
+            data-bs-target="#submitModal">+ Add Answer +5 PTS</a>
+            <div class="icone text-end d-flex">
+                <div class="a px-4">
+                <i class="fa fa-flag fa-solid" aria-hidden="true" data-aos="flip-up"></i>
+               </div>
+               <div class="b">
+                <i class="fa fa-bell fa-solid" aria-hidden="true" data-aos="flip-up"></i>
+               </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+ <!-- main section end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+    </script>
+</body>
+
+</html>

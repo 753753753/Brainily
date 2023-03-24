@@ -1,0 +1,236 @@
+/********** Template CSS **********/
+/* 1. General */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root {
+    --primary: #FF5E14;
+    --primary-font: 'Roboto Slab', serif;
+    --secondary-font: 'Josefin Sans', Sans-serif;
+}
+
+h1,
+h2,
+.h1,
+.h2,
+.fw-bold {
+    font-weight: 700 !important;
+    font-family: var(--secondary-font);
+}
+
+h3,
+h4,
+.h3,
+.h4,
+.fw-medium {
+    font-weight: 600 !important;
+    font-family: var(--primary-font);
+}
+
+h5,
+h6,
+.h5,
+.h6,
+.fw-semi-bold {
+    font-weight: 500 !important;
+    font-family: var(--secondary-font);
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+    font-weight: 500;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    width: 48px;
+    height: 48px;
+}
+.btn:hover {
+    background-color: var(--primary);
+    border-color: #FF5E14;
+}
+.fa:hover {
+   
+    color: var(--primary);
+}
+
+/*** Navbar ***/
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+.navbar{
+    padding-top: 2rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 20px 0;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    padding: 0;
+    font-family: var(--secondary-font);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+.navbar .btn{
+ height: 3.5rem;
+}
+
+.search-input{
+    width: 35rem;
+}
+.form-outline{
+    width: 30rem;
+}
+
+.form-inputs{
+    position:relative;
+}
+.form-inputs .form-control{
+    height:45px; 
+}
+
+.form-inputs .form-control:focus{
+    box-shadow:none;
+    border:1px solid #000;
+}
+
+.form-inputs i{
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+
+.navbar1 .container{
+    margin-top: -1rem!important;
+    margin-left: 11rem;
+}
+
+.main .container .p p{
+    font-size: 9px;
+}
+
+.main-btn {
+    display: inline-block;
+    border: 0.2rem solid black;
+    color: white!important;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.8rem;
+    background: black;
+    text-transform: uppercase;
+    border-radius: 3.5rem;
+    transform: all 0.3s ease-in-out !important;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem!important;
+}
+
+.main-btn:hover {
+    background-color: var(--primary)!important;
+    color: var(--white) !important;
+    border: 0.2rem solid var(--white);
+}
+
+.main .container .icone{
+    margin-left: 36rem;
+    font-size: 2rem;
+}
+
+.modal-body img{
+    width: 29rem;
+    height: 25rem;
+}
